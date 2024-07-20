@@ -1,7 +1,7 @@
 
 build_type=$1
 if [ -z $FAISS_INSTALL_PREFIX ]; then
-    install_prefix="/root/opt-dev"
+    install_prefix="/home/yy354/opt-dev"
 else
     install_prefix=$FAISS_INSTALL_PREFIX
 fi
