@@ -34,7 +34,7 @@ NPROC=`nproc`
 if [ $NPROC -lt 2 ]; then
     NPROC=2
 fi
-make -j `expr $NPROC - 1` 2>err.log
+make faiss -j `expr $NPROC - 1` 2>err.log
 make install
 
 # Building python bindings
